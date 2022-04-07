@@ -9,6 +9,7 @@ public class Main {
         Osoba mat = new Osoba("mati", "wilczewski");
         Osoba pau = new Osoba("Pauka", "Chmielewska");
         Kartoteka kart = new Kartoteka(2);
+        Kartoteka dom = new Kartoteka();
         kart.dodaj(mat);
         kart.dodaj(pau);
         kart.usun(pau);

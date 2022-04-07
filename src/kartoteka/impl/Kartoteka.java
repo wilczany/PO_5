@@ -38,18 +38,17 @@ public class Kartoteka {
                     baza[i] = baza[++i];
                     ilosc--;
                     return;
-
             }
-
         }
         System.out.println("Nie znaleziono osoby");
 
     }
-    void usun(int index){
-            //baza[index];
+    /*void usun(int index){
+            if(ilosc<)
 
-    }
-    int rozmiar(){return 1;}
+    }*/
+    int rozmiar(){return rozmiar;}
+    int ilosc(){return ilosc;}
 
     public boolean czyZawiera(Osoba os){
 
