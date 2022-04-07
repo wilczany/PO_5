@@ -4,17 +4,18 @@ import kartoteka.impl.*;
 public class Main {
 
     public static void main(String[] args) {
-
-
-        Osoba mat = new Osoba("mati", "wilczewski");
-        Osoba pau = new Osoba("Pauka", "Chmielewska");
-        Kartoteka kart = new Kartoteka(2);
-        Kartoteka dom = new Kartoteka();
+        Kartoteka kart=new Kartoteka(5);
+        Osoba mat = new Osoba("Mateusz", "Wilczewski");
         kart.dodaj(mat);
-        kart.dodaj(pau);
-        kart.usun(pau);
-        kart.usun(mat);
-        kart.czyZawiera(mat);
-        kart.czyZawiera(pau);
+        kart.dodaj(new Osoba("Krzysztof", "Grzyb"));
+        kart.dodaj(new Osoba("Jan","Bąk"));
+        Osoba osobnik=kart.pobierz(2);
+        kart.usun(osobnik);
+        System.out.println(kart.czyZawiera(osobnik));
+        System.out.println(osobnik.getImie());
+        System.out.println( "Kartoteka ma rozmiar: " + kart.rozmiar());
+
+
+
     }
 }
